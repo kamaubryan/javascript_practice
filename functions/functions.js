@@ -24,7 +24,7 @@ greet("Brian");
 // function expressions
 
 let luxury = function (car = "benz") {
-  // when you declare the parameter first and the function itself has no valueas it'll just take the values declared
+  // when you declare the parameter first and the function itself has no values it'll just take the values declared
   // functions expressions involves the use of making a variable name with the function details.
   console.log(`my type of luxury is ${car}`);
 };
@@ -48,7 +48,7 @@ let yoow = (greetings, slang)=>{
     
 let areOfCircle = radius => 3.42 * radius**// when using the arrow functions you don have to include brackets hence the code is shorter
 
-let myDream = (grace, success) => {
+const myDream = (grace, success) => {
   return `My dream is to achieve ${grace} with ${success}.`;
 };
 
