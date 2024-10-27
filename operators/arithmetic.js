@@ -6,7 +6,7 @@ let result = num1 + num2; // here we have just added the num1 and num2
 console.log(result); // output is 15
 
 // you can also subtract
-result = num1 - num2;
+result = num1 - num2;x
 console.log(result); // -5
 // multiplication
 result = num1 * num2;

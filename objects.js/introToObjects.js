@@ -21,6 +21,12 @@ console.log(person1["name"], person1["favCar"], person1["status"]); // this has 
 
 console.log(person1["woza"]);// when you try to output a property that is not indicated it will output undefined
 
-// when theres a property with more than one word then its reccomended to use the brackets
+// when theres a property with more than one word then its recommended to use the brackets
 
-console.log(person1['work experience']);// this is so recommmended.
+console.log(person1['work experience']);// this is so recommended.
+
+// while you want to print all the objects at once you can use the for in loop method
+for (let x in person1){
+console.log(x, person1[x]);
+
+}

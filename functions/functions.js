@@ -38,20 +38,48 @@ const calculations = calcArea(3, 4); // you have to assign the function a new va
 // console.log(calcArea());
 console.log(calculations);
 
-
 // arrow functions
+// while using arrow functions you dont need to use the return statement
 
-const hello = ()=> 'hello world';
-let yooow = greetings => {} // when the parameter is one there is no need of brackets 
-let yoow = (greetings, slang)=>{ 
-} // when the parameters are more than one you have to include paranthesis
-    
-let areOfCircle = radius => 3.42 * radius**// when using the arrow functions you don have to include brackets hence the code is shorter
+const hello = () => "hello world";
+let yooow = (greetings) => {}; // when the parameter is one there is no need of brackets
+let yoow = (greetings, slang) => {}; // when the parameters are more than one you have to include paranthesis
 
-const myDream = (grace, success) => {
-  return `My dream is to achieve ${grace} with ${success}.`;
+let areOfCircle = (radius) => 3.42 * radius * radius; // when using the arrow functions you don have to include brackets hence the code is shorter
+
+console.log(areOfCircle(7));
+let Grace = "Gods Grace";
+let freedom = "Financial freedom";
+const Happiness = (Grace, freedom) => {
+  return Grace + freedom; // you cant return twice
 };
+console.log(`Real Happiness is defined by ${Grace} and ${freedom}`); // this template literals
+let beingHappy = Happiness(Grace, freedom);
+console.log(beingHappy);
 
-console.log(myDream('grace', 'success'));
+// lets call a function and pass a value to it
+const Kamau = (user) => {
+  // here we have accepted the user as a parameter
+  return `hello ${user}`; // then later we have returned  and called the same value
+};
+let user = "kiriro"; // here we have defined the value to be kiriro
+console.log(Kamau(user));
 
+// using an arrow function without a return statement
 
+let kiriros = (firstWife, secondWife) => firstWife + secondWife;// here I have already returned the statement without actually using the return statement
+let kiriro = kiriros("wanjiku", "wairimu");// here I have reassigned the function to a value value called kiriro
+console.log(kiriro);
+
+// lets check if we can  reassign a function since its not a const
+
+kiriros = (child1, child2, child3, child4, child5)=> child1+child2+child3+child4+child5;// here we have just reassigned the value of the function kiriros to another value but if we used the const keyword this wolud be impossible
+ // spice this up with a for loop inorder to print all
+ for(let i=0; i<kiriros.length;i++){
+  console.log(kiriros(i));
+  // well check this via chatgpt
+ } 
+let kiriroKids= kiriros("teresia", "susan", "ann","wairimu", "njihia");
+console.log(kiriroKids);
+
+ 
