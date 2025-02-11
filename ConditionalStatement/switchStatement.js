@@ -8,12 +8,12 @@ tuesday - thursday= 9am
 friday - 9am
 sat-sun - 8am
 */
-let day = "thusday";
+let day = "thursday";
 // lets try the same concept with if else
 if (day === "monday") {
   console.log(day, ":7am");
 } else if (day === "tuesday" || day === "wednesday" || day === "thursday") {
-  console.log(day, ":4am");
+  console.log(day, ": 4am");
 } else if (day === "friday") {
   console.log(day, ":9am");
 } else if (day === "saturday" || day === "sunday") {
@@ -30,7 +30,7 @@ switch (day) {
   case "tuesday":
   case "wednesday":
   case "thursday":
-    console.log(day, ":4am");
+    console.log(day, ": 4am");
     break;
   case "friday":
     console.log(day, ":9am");
@@ -39,7 +39,7 @@ switch (day) {
   case "sunday":
     console.log(day, ":8am");
     break;
-  default:// you can use this default word when there is not any input as yours,, it works as else keyword in if else statements
+  default: // you can use this default word when there is not any input as yours,, it works as else keyword in if else statements
     console.log("wrong input");
 }
 

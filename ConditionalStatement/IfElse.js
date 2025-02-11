@@ -8,11 +8,12 @@ let num2 = 8;
 let result = num1 > num2;
 
 if (result) {
+  // the rule of booleans is applied here
   console.log("true"); // this checks if the answer is true
 } else {
   console.log("false"); // this checks if the answer is false // the output will be false since as declared above num1 is less than num2
 }
-result = num1;
+result = num1; // here we have reassigned the value of result to num1
 if (result % 2 === 0) {
   // this checks if the number that result is given is either odd or even
   console.log("your number is even");
@@ -22,7 +23,7 @@ if (result % 2 === 0) {
 
 // else if statement
 
-let number1 = 7,
+let number1 = 7, // here we have declared three variables in one line to avoid redundancy
   number2 = 10,
   number3 = 13;
 

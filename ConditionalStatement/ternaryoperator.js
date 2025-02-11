@@ -19,7 +19,7 @@ console.log(result); // here we have use the ternary operator hence the shortnes
 // lets try nested if with ternary operator
 // we are going to check if the kid has passed and the grade he is in
 
-let results=90;
+let results = 90;
 results > 90
   ? console.log("the grade is a strong A")
   : results >= 75
@@ -28,6 +28,20 @@ results > 90
   ? console.log("thats a clean B")
   : results >= 50
   ? console.log("that a clean C")
-  : 
-  console.log("you have failed")
-  
+  : console.log("you have failed");
+
+// another example of ternary operator
+
+let prettyFace = true;
+let prettyBody = true;
+let prettyMind = true;
+
+let solid10 = prettyFace && prettyBody && prettyMind;
+let negotiable = prettyFace || (prettyBody && prettyMind);
+let fuckable = (prettyFace && prettyBody) || prettyMind;
+
+let mygotoBitch = solid10;
+solid10 ? "thats the go to " : "you are not solid";
+negotiable ? "you are negotiable" : "you are not negotiable";
+fuckable ? "you are fuckable" : "you are not fuckable";
+console.log(mygotoBitch);
