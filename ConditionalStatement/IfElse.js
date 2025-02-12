@@ -28,6 +28,7 @@ let number1 = 7, // here we have declared three variables in one line to avoid r
   number3 = 13;
 
 // here we use the if else statement to check which number is the greatest.
+// we have to use the logical operator to check which number is the greatest and both conditions have to be met in order to execute the statement
 
 if (number1 > number2 && number1 > number3) {
   // we have to use the and logical operator since both conditions have to be true inoder to execute the statements

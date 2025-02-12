@@ -34,7 +34,7 @@ let names =
     " " // when you put one space it will make each and every letter as an array and when we put two spaces its the whole word
   );
 console.log(names);
-let [p, q, r, s, t, u, v, w, x, y, , z] = names;
+let [p, q, r, s, t, u, v, w, x, y, , z] = names; // here we have destructured the array and assigned the values to the following variables
 console.log(q, r, s, t, v, z);
 let [...woza] = names; // this is another way of destructuring an array
 console.log(woza);

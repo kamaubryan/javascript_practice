@@ -29,19 +29,3 @@ results > 90
   : results >= 50
   ? console.log("that a clean C")
   : console.log("you have failed");
-
-// another example of ternary operator
-
-let prettyFace = true;
-let prettyBody = true;
-let prettyMind = true;
-
-let solid10 = prettyFace && prettyBody && prettyMind;
-let negotiable = prettyFace || (prettyBody && prettyMind);
-let fuckable = (prettyFace && prettyBody) || prettyMind;
-
-let mygotoBitch = solid10;
-solid10 ? "thats the go to " : "you are not solid";
-negotiable ? "you are negotiable" : "you are not negotiable";
-fuckable ? "you are fuckable" : "you are not fuckable";
-console.log(mygotoBitch);

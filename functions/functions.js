@@ -1,10 +1,22 @@
+/** there are several ways to declare functions which are :
+ * function  declaration  :
+ * function expression
+ *
+ */
+
 // function declaration;
 
 function car() {
-  console.log("beamer is a nice car");
+  console.log("beamer is such a nice car");
 }
 
 car(); //this is what we call javascript declaration where a function with a name cane be called anywhere even before its defined
+
+function favouriteCar(favCar) {
+  console.log(`my favourite car is  a ${favCar}`);
+}
+
+favouriteCar(" mercedes s500");
 
 // hoisting in javascript declaration
 
@@ -24,11 +36,12 @@ greet("Brian");
 // function expressions
 
 let luxury = function (car = "benz") {
+  // you can just give the parameter the value making it not need to give it later
   // when you declare the parameter first and the function itself has no values it'll just take the values declared
   // functions expressions involves the use of making a variable name with the function details.
   console.log(`my type of luxury is ${car}`);
 };
-luxury("mercedes");
+luxury();
 
 let calcArea = function (length, width) {
   return length * width;
@@ -67,19 +80,18 @@ console.log(Kamau(user));
 
 // using an arrow function without a return statement
 
-let kiriros = (firstWife, secondWife) => firstWife + secondWife;// here I have already returned the statement without actually using the return statement
-let kiriro = kiriros("wanjiku", "wairimu");// here I have reassigned the function to a value value called kiriro
+let kiriros = (firstWife, secondWife) => firstWife + secondWife; // here I have already returned the statement without actually using the return statement
+let kiriro = kiriros("wanjiku", "wairimu"); // here I have reassigned the function to a value value called kiriro
 console.log(kiriro);
 
 // lets check if we can  reassign a function since its not a const
 
-kiriros = (child1, child2, child3, child4, child5)=> child1+child2+child3+child4+child5;// here we have just reassigned the value of the function kiriros to another value but if we used the const keyword this wolud be impossible
- // spice this up with a for loop inorder to print all
- for(let i=0; i<kiriros.length;i++){
+kiriros = (child1, child2, child3, child4, child5) =>
+  child1 + child2 + child3 + child4 + child5; // here we have just reassigned the value of the function kiriros to another value but if we used the const keyword this wolud be impossible
+// spice this up with a for loop inorder to print all
+for (let i = 0; i < kiriros.length; i++) {
   console.log(kiriros(i));
   // well check this via chatgpt
- } 
-let kiriroKids= kiriros("teresia", "susan", "ann","wairimu", "njihia");
+}
+let kiriroKids = kiriros("teresia", "susan", "ann", "wairimu", "njihia");
 console.log(kiriroKids);
-
- 
