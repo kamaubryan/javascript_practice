@@ -17,9 +17,12 @@ function greet() {
 // greet();
 function greet(name) {
   console.log(`hello there: ${name}`); // note better  you have to use the `` in order to get the results
+  return `hello there  ${name}`; // you can also use a return statement
 }
 
-greet("Brian");
+// greet("Brian");
+
+console.log(greet("Timothy"));
 
 // function expressions
 
@@ -38,15 +41,24 @@ const calculations = calcArea(3, 4); // you have to assign the function a new va
 // console.log(calcArea());
 console.log(calculations);
 
-
 // arrow functions
+// in arror functions there are no need of the return keyword you can just declare the value without the retun statement
+const hello = () => "hello world";
+console.log(hello());
 
-const hello = ()=> 'hello world';
-let yooow = greetings => {} // when the parameter is one there is no need of brackets 
-let yoow = (greetings, slang)=>{ 
-} // when the parameters are more than one you have to include paranthesis
-    
-let areOfCircle = radius => 3.42 *radius**2;
+let yooow = (greetings) => {
+  let officialGreetings = `hello ${greetings}`;
+  return officialGreetings;
+}; // when the parameter is one there is no need of brackets
+console.log(yooow("Sir/Madam"));
+
+let yoow = (slang) => {
+  let unofficialGreetings = `woza ${slang},\nsemajy ${slang}`;
+  return unofficialGreetings;
+}; // when the parameters are more than one you have to include paranthesis
+console.log(yoow("Bois"));
+
+let areOfCircle = (radius) => 3.42 * radius ** 2;
 // when using the arrow functions you don have to include brackets hence the code is shorter
 
 let myDream = (grace, success) => {
@@ -54,6 +66,3 @@ let myDream = (grace, success) => {
 };
 
 console.log(myDream("grace", "success"));
-
-
-
