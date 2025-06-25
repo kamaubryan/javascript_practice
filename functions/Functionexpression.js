@@ -27,7 +27,7 @@ const Instagram = (User) => {
   console.log(num); // here we have called it
 
   console.log(instagramUser); // here we have called the global variable and no error has been found
-  return `hello ${User}`; // here we are returning the value of user
+  return `hello there :  ${User}`; // here we are returning the value of user
 };
 //{ console.log(num)};// when we try accessing it from here its  impossible this is the error{ReferenceError: num is not defined}
 
@@ -41,7 +41,9 @@ function multiply(num1, num2, num3 = 10) {
   return num1 * num2 * num3; // you can also dictate what to return in your function
   //   return num1*num2;
 }
-console.log(multiply(4, 5, 6)); // here is the first output
+console.log(multiply(3, 4)); // here we are using the third parameter which we had earlier defined as 10
+
+console.log(multiply(4, 5, 6)); // here is the first output   here we have already reasigned the value of num 3
 
 let results = multiply(5, 40, 5);
 console.log(results); // this outputs the same value since we have reassigned the valued of function multiply to results
@@ -72,14 +74,11 @@ function sum() {
 }
 sum();
 
-
-
 // parameters and arguments
 
-function areaOfRectangle(width = 4, length = 2) {
+function areaOfRectangle(width, length) {// here width and length are parameters
   let area = length * width;
   return "the area of a rectangle is " + area;
 }
 
-console.log(areaOfRectangle());
-
+console.log(areaOfRectangle(20, 45)); // here 20 and 45 are arguments since they are the values being passed on 
