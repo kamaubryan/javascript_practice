@@ -1,0 +1,49 @@
+ <!-- others ways you can output a statement on html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p id="demonstration"> </p>
+    <script>
+        document.getElementById("demonstration").innerHTML = "<h3> hey kasongo</h3>"
+    </script>
+</body>
+</html>
+
+<!-- using doucument.write() -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>my first web page</h1>
+<p>first paragraph</p>
+
+<button type="button" onclick="document.write(10+45)"> click me</button>
+<script>
+    document.write(2-3);  // when you use this function after a html document is loaded it will delete all existing html
+
+// you can also use the window alert feature 
+window.alert("life don be easy mahn wake up bruv")
+// you can also use the alert function
+alert("send your self mahn ")
+
+// there is also the console log feature
+
+console.log("hey mahn");
+
+
+</script>
+</body>
+</html>
+
